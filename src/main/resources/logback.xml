@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<!-- file appender-->
+	<appender name="controllerFileAppender" class="ch.qos.logback.core.FileAppender">
+		<file>controller.log</file>
+		<encoder>
+			<pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %M  - %msg%n</pattern>
+		</encoder>
+	</appender>
+	<appender name="serviceFileAppender" class="ch.qos.logback.core.FileAppender">
+		<file>service.log</file>
+		<encoder>
+			<pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %M  - %msg%n</pattern>
+		</encoder>
+	</appender>
+		<appender name="repositoryFileAppender" class="ch.qos.logback.core.FileAppender">
+		<file>repository.log</file>
+		<encoder>
+			<pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36}  - %M - %msg%n</pattern>
+		</encoder>
+	</appender>
+		<appender name="exceptionFileAppender" class="ch.qos.logback.core.FileAppender">
+		<file>exception.log</file>
+		<encoder>
+			<pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %M - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- console appender-->
+	<appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d [%thread] %-5level  %logger{35} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="com.na.student_assgn.controller" level="info" additivity="false">
+		<appender-ref ref="controllerFileAppender" />
+	</logger>
+	<logger name="com.na.student_assgn.service" level="info" additivity="false">
+		<appender-ref ref="serviceFileAppender" />
+	</logger>
+	<logger name="com.na.student_assgn.daoImpl" level="info" additivity="false">
+		<appender-ref ref="repositoryFileAppender" />
+	</logger>
+	<logger name="com.na.student_assgn.controllerAdvice" level="info" additivity="false">
+		<appender-ref ref="exceptionFileAppender" />
+	</logger>
+
+	<root level="info">
+		<!--<appender-ref ref="fileAppender" />-->
+		<appender-ref ref="consoleAppender" />
+	</root>
+
+</configuration>
