@@ -18,3 +18,7 @@
 2024-02-27 13:36:11.324 WARN  [http-nio-8080-exec-3] c.n.s.c.StudentControllerAdvice - handleEmptyResultDataAccessException - Incorrect result size: expected 1, actual 0
 2024-02-27 13:38:26.122 WARN  [http-nio-8080-exec-1] c.n.s.c.StudentControllerAdvice - handleEmptyResultDataAccessException - Incorrect result size: expected 1, actual 0
 2024-02-27 13:40:33.433 WARN  [http-nio-8080-exec-6] c.n.s.c.StudentControllerAdvice - handleEmptyResultDataAccessException - Incorrect result size: expected 1, actual 0
+2024-02-28 14:25:10.432 WARN  [http-nio-8080-exec-9] c.n.s.c.StudentControllerAdvice - handleInvalidPhoneNumberException - Invalid Phonenumber.
+2024-02-28 14:31:37.010 WARN  [http-nio-8080-exec-5] c.n.s.c.StudentControllerAdvice - handleInvalidPhoneNumberException - Invalid Phonenumber.
+2024-02-28 14:32:19.266 WARN  [http-nio-8080-exec-1] c.n.s.c.StudentControllerAdvice - handleInvalidPhoneNumberException - Invalid Phonenumber.
+2024-02-28 14:32:56.455 WARN  [http-nio-8080-exec-2] c.n.s.c.StudentControllerAdvice - handleInvalidPhoneNumberException - Invalid Phonenumber.

@@ -23,7 +23,7 @@ public class StudentService {
 
 	public String registerStudent(Student student) {
 		String phone_number = student.getPhone_number();
-		if (!(phone_number.length() == 10 && phone_number.matches("\\d+"))) {
+		if (!(phone_number != null && phone_number.length() == 10 && phone_number.matches("\\d+"))) {
 			logger.warn("Invalid Phonenumber.");
 			throw new InvalidPhoneNumberException("Invalid Phonenumber.");
 		}
@@ -69,7 +69,7 @@ public class StudentService {
 		Student existingStudent = studentDAO.findStudentById(id);
 		Field[] fields = existingStudent.getClass().getDeclaredFields();
 		for (Field field : fields) {
-//			field.setAccessible(false);
+			field.setAccessible(true);
 			try {
 
 				Object existingValue = field.get(existingStudent);

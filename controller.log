@@ -5,3 +5,7 @@
 2024-02-27 14:51:19.981 INFO  [http-nio-8080-exec-4] c.n.s.controller.StudentController - updateStudent  - Student data updated for student id : 1
 2024-02-27 14:51:57.570 INFO  [http-nio-8080-exec-2] c.n.s.controller.StudentController - updateStudent  - Student data updated for student id : 1
 2024-02-27 14:52:51.678 INFO  [http-nio-8080-exec-3] c.n.s.controller.StudentController - updateStudent  - Student data updated for student id : 1
+2024-02-28 14:26:29.736 INFO  [http-nio-8080-exec-10] c.n.s.controller.StudentController - updateStudent  - Student data updated for student id : 1
+2024-02-28 14:28:00.368 INFO  [http-nio-8080-exec-4] c.n.s.controller.StudentController - updateStudent  - Student data updated for student id : 1
+2024-02-28 14:28:39.589 INFO  [http-nio-8080-exec-1] c.n.s.controller.StudentController - updateStudent  - Student data updated for student id : 1
+2024-02-28 14:29:35.007 INFO  [http-nio-8080-exec-2] c.n.s.controller.StudentController - updateStudent  - Student data updated for student id : 1

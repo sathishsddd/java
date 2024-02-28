@@ -62,6 +62,9 @@ public class StudentController {
 		}
 	}
 
+	@Operation(description = "Get endpoint", summary = "This endpoint is to get all student details", responses = {
+			@ApiResponse(description = "success", responseCode = "200"),
+			@ApiResponse(description = "Student list is empty", responseCode = "400") })
 	@GetMapping("/findAllStudents")
 	public ResponseEntity<List<Student>> findAllStudents() {
 		List<Student> students = studentService.findAllStudents();
