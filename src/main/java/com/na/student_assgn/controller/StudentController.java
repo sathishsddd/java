@@ -54,7 +54,7 @@ public class StudentController {
 	public ResponseEntity<Student> findStudentByName(@RequestParam("name") String name) {
 		Student student = studentService.findStudentByName(name);
 		if (student != null) {
-			logger.info("Student fetched successfully.");
+			logger.info("Student data fetched successfully for : "+name);
 			return new ResponseEntity<Student>(student, HttpStatus.OK);
 		} else {
 			logger.warn("Student data not available for student : "+name);
@@ -98,7 +98,7 @@ public class StudentController {
 			return new ResponseEntity<String>(updateStudent, HttpStatus.OK);
 		} else {
 			logger.warn("Error in updating student data for id: "+id);
-			return new ResponseEntity<String>(updateStudent, HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<String>("Error in updating student data", HttpStatus.BAD_REQUEST);
 		}
 	}
 

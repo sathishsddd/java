@@ -23,7 +23,6 @@ public class StudentDAOImpl implements StudentDAO {
 
 	@Override
 	public int registerStudent(Student student) {
-		logger.info("inside repository");
 		String query = "INSERT INTO student(name, age, phone_number, email_id, course, batch, fees, register_no, gender, current_status) VALUES(?,?,?,?,?,?,?,?,?,?)";
 		int result = jdbcTemplate.update(query, student.getName(), student.getAge(), student.getPhone_number(),
 				student.getEmail_id(), student.getCourse(), student.getBatch(), student.getFees(),

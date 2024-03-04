@@ -1,5 +1,6 @@
 package com.na.student_assgn.controllerAdvice;
 
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -43,6 +44,13 @@ public class StudentControllerAdvice {
 	public ResponseEntity<String> handleEmptyResultDataAccessException(EmptyResultDataAccessException exception){
 		logger.warn(exception.getMessage());
 		return new ResponseEntity<String>("No data available",HttpStatus.NOT_FOUND);
+	}
+	
+	@ExceptionHandler(SQLIntegrityConstraintViolationException.class)
+	public ResponseEntity<String> handleSQLIntegrityConstraintViolationException(SQLIntegrityConstraintViolationException exception){
+		logger.warn(exception.getMessage());
+		return new ResponseEntity<String>(exception.getMessage(),HttpStatus.BAD_REQUEST);
+				
 	}
 
 }

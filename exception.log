@@ -1,24 +1,5 @@
-2024-02-23 19:02:18.093 WARN  [http-nio-8080-exec-3] c.n.s.c.StudentControllerAdvice - must not be empty
-2024-02-23 19:03:44.314 WARN  [http-nio-8080-exec-1] c.n.s.c.StudentControllerAdvice - register_no-must not be empty
-2024-02-23 19:08:27.263 WARN  [http-nio-8080-exec-2] c.n.s.c.StudentControllerAdvice - lambda$0 - register_no-must not be empty
-2024-02-23 19:11:52.888 WARN  [http-nio-8080-exec-4] c.n.s.c.StudentControllerAdvice - lambda$0 - register_no-must not be empty
-2024-02-26 15:36:07.929 WARN  [http-nio-8080-exec-4] c.n.s.c.StudentControllerAdvice - lambda$0 - email_id-must be a well-formed email address
-2024-02-26 15:36:28.840 WARN  [http-nio-8080-exec-5] c.n.s.c.StudentControllerAdvice - lambda$0 - email_id-must be a well-formed email address
-2024-02-26 15:37:12.632 WARN  [http-nio-8080-exec-6] c.n.s.c.StudentControllerAdvice - lambda$0 - register_no-must not be empty
-2024-02-26 15:37:32.173 WARN  [http-nio-8080-exec-7] c.n.s.c.StudentControllerAdvice - lambda$0 - email_id-must be a well-formed email address
-2024-02-26 19:29:47.587 WARN  [http-nio-8080-exec-5] c.n.s.c.StudentControllerAdvice - lambda$0 - email_id-must be a well-formed email address
-2024-02-26 19:29:58.525 WARN  [http-nio-8080-exec-6] c.n.s.c.StudentControllerAdvice - lambda$0 - email_id-must not be empty
-2024-02-26 19:30:27.433 WARN  [http-nio-8080-exec-7] c.n.s.c.StudentControllerAdvice - lambda$0 - email_id-must not be empty
-2024-02-26 19:30:35.922 WARN  [http-nio-8080-exec-8] c.n.s.c.StudentControllerAdvice - lambda$0 - email_id-must not be empty
-2024-02-27 12:57:40.451 WARN  [http-nio-8080-exec-7] c.n.s.c.StudentControllerAdvice - lambda$0 - email_id-must be a well-formed email address
-2024-02-27 13:10:09.691 WARN  [http-nio-8080-exec-1] c.n.s.c.StudentControllerAdvice - handleEmptyResultDataAccessException - Incorrect result size: expected 1, actual 0
-2024-02-27 13:14:37.699 WARN  [http-nio-8080-exec-5] c.n.s.c.StudentControllerAdvice - handleEmptyResultDataAccessException - Incorrect result size: expected 1, actual 0
-2024-02-27 13:15:48.936 WARN  [http-nio-8080-exec-5] c.n.s.c.StudentControllerAdvice - handleEmptyResultDataAccessException - Incorrect result size: expected 1, actual 0
-2024-02-27 13:35:27.700 WARN  [http-nio-8080-exec-1] c.n.s.c.StudentControllerAdvice - handleEmptyResultDataAccessException - Incorrect result size: expected 1, actual 0
-2024-02-27 13:36:11.324 WARN  [http-nio-8080-exec-3] c.n.s.c.StudentControllerAdvice - handleEmptyResultDataAccessException - Incorrect result size: expected 1, actual 0
-2024-02-27 13:38:26.122 WARN  [http-nio-8080-exec-1] c.n.s.c.StudentControllerAdvice - handleEmptyResultDataAccessException - Incorrect result size: expected 1, actual 0
-2024-02-27 13:40:33.433 WARN  [http-nio-8080-exec-6] c.n.s.c.StudentControllerAdvice - handleEmptyResultDataAccessException - Incorrect result size: expected 1, actual 0
-2024-02-28 14:25:10.432 WARN  [http-nio-8080-exec-9] c.n.s.c.StudentControllerAdvice - handleInvalidPhoneNumberException - Invalid Phonenumber.
-2024-02-28 14:31:37.010 WARN  [http-nio-8080-exec-5] c.n.s.c.StudentControllerAdvice - handleInvalidPhoneNumberException - Invalid Phonenumber.
-2024-02-28 14:32:19.266 WARN  [http-nio-8080-exec-1] c.n.s.c.StudentControllerAdvice - handleInvalidPhoneNumberException - Invalid Phonenumber.
-2024-02-28 14:32:56.455 WARN  [http-nio-8080-exec-2] c.n.s.c.StudentControllerAdvice - handleInvalidPhoneNumberException - Invalid Phonenumber.
+2024-03-04 11:17:35.550 WARN  [http-nio-8080-exec-6] c.n.s.c.StudentControllerAdvice - handleEmptyResultDataAccessException - Incorrect result size: expected 1, actual 0
+2024-03-04 11:41:02.456 WARN  [http-nio-8080-exec-6] c.n.s.c.StudentControllerAdvice - lambda$0 - register_no-must not be empty
+2024-03-04 11:41:11.511 WARN  [http-nio-8080-exec-4] c.n.s.c.StudentControllerAdvice - lambda$0 - register_no-must not be empty
+2024-03-04 11:41:12.555 WARN  [http-nio-8080-exec-8] c.n.s.c.StudentControllerAdvice - lambda$0 - register_no-must not be empty
+2024-03-04 11:47:59.935 WARN  [http-nio-8080-exec-1] c.n.s.c.StudentControllerAdvice - handleSQLIntegrityConstraintViolationException - Duplicate entry 'prabhu@gmail.com' for key 'email_id'
