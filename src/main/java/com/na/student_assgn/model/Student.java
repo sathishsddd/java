@@ -1,5 +1,6 @@
 package com.na.student_assgn.model;
 
+import java.util.List;
 import java.util.Objects;
 
 import jakarta.validation.constraints.Email;
@@ -19,38 +20,28 @@ public class Student {
 	@Email
 	private String email_id;
 	
-	private String course;
-	
-	private String batch;
-	
-	private String fees;
+	private String role;
 	
 	@NotEmpty
-	private String register_no;
+	private String password;
 	
-	private String gender;
-	
-	private String current_status;
+	private List<Course> courses;
 
 	public Student() {
 		super();
 	}
 
-	public Student(Integer student_id, String name, Integer age, String phone_number, @Email String email_id,
-			String course, String batch, String fees, @NotEmpty String register_no, String gender,
-			String current_status) {
+	public Student(Integer student_id, String name, Integer age, String phone_number, @NotEmpty @Email String email_id,
+			String role, @NotEmpty String password, List<Course> courses) {
 		super();
 		this.student_id = student_id;
 		this.name = name;
 		this.age = age;
 		this.phone_number = phone_number;
 		this.email_id = email_id;
-		this.course = course;
-		this.batch = batch;
-		this.fees = fees;
-		this.register_no = register_no;
-		this.gender = gender;
-		this.current_status = current_status;
+		this.role = role;
+		this.password = password;
+		this.courses = courses;
 	}
 
 	public Integer getStudent_id() {
@@ -93,58 +84,33 @@ public class Student {
 		this.email_id = email_id;
 	}
 
-	public String getCourse() {
-		return course;
+	public String getRole() {
+		return role;
 	}
 
-	public void setCourse(String course) {
-		this.course = course;
+	public void setRole(String role) {
+		this.role = role;
 	}
 
-	public String getBatch() {
-		return batch;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setBatch(String batch) {
-		this.batch = batch;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
-	public String getFees() {
-		return fees;
+	public List<Course> getCourses() {
+		return courses;
 	}
 
-	public void setFees(String fees) {
-		this.fees = fees;
-	}
-
-	public String getRegister_no() {
-		return register_no;
-	}
-
-	public void setRegister_no(String register_no) {
-		this.register_no = register_no;
-	}
-
-	public String getGender() {
-		return gender;
-	}
-
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
-
-	public String getCurrent_status() {
-		return current_status;
-	}
-
-	public void setCurrent_status(String current_status) {
-		this.current_status = current_status;
+	public void setCourses(List<Course> courses) {
+		this.courses = courses;
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(age, batch, course, current_status, email_id, fees, gender, name, phone_number, register_no,
-				student_id);
+		return Objects.hash(age, courses, email_id, name, password, phone_number, role, student_id);
 	}
 
 	@Override
@@ -156,21 +122,17 @@ public class Student {
 		if (getClass() != obj.getClass())
 			return false;
 		Student other = (Student) obj;
-		return Objects.equals(age, other.age) && Objects.equals(batch, other.batch)
-				&& Objects.equals(course, other.course) && Objects.equals(current_status, other.current_status)
-				&& Objects.equals(email_id, other.email_id) && Objects.equals(fees, other.fees)
-				&& Objects.equals(gender, other.gender) && Objects.equals(name, other.name)
-				&& Objects.equals(phone_number, other.phone_number) && Objects.equals(register_no, other.register_no)
-				&& Objects.equals(student_id, other.student_id);
+		return Objects.equals(age, other.age) && Objects.equals(courses, other.courses)
+				&& Objects.equals(email_id, other.email_id) && Objects.equals(name, other.name)
+				&& Objects.equals(password, other.password) && Objects.equals(phone_number, other.phone_number)
+				&& Objects.equals(role, other.role) && Objects.equals(student_id, other.student_id);
 	}
 
 	@Override
 	public String toString() {
 		return "Student [student_id=" + student_id + ", name=" + name + ", age=" + age + ", phone_number="
-				+ phone_number + ", email_id=" + email_id + ", course=" + course + ", batch=" + batch + ", fees=" + fees
-				+ ", register_no=" + register_no + ", gender=" + gender + ", current_status=" + current_status + "]";
+				+ phone_number + ", email_id=" + email_id + ", role=" + role + ", password=" + password + ", courses="
+				+ courses + "]";
 	}
-	
-	
 
 }

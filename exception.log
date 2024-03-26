@@ -1,5 +1,0 @@
-2024-03-04 11:17:35.550 WARN  [http-nio-8080-exec-6] c.n.s.c.StudentControllerAdvice - handleEmptyResultDataAccessException - Incorrect result size: expected 1, actual 0
-2024-03-04 11:41:02.456 WARN  [http-nio-8080-exec-6] c.n.s.c.StudentControllerAdvice - lambda$0 - register_no-must not be empty
-2024-03-04 11:41:11.511 WARN  [http-nio-8080-exec-4] c.n.s.c.StudentControllerAdvice - lambda$0 - register_no-must not be empty
-2024-03-04 11:41:12.555 WARN  [http-nio-8080-exec-8] c.n.s.c.StudentControllerAdvice - lambda$0 - register_no-must not be empty
-2024-03-04 11:47:59.935 WARN  [http-nio-8080-exec-1] c.n.s.c.StudentControllerAdvice - handleSQLIntegrityConstraintViolationException - Duplicate entry 'prabhu@gmail.com' for key 'email_id'
